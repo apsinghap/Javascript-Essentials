@@ -1,0 +1,146 @@
+Question 2.
+
+
+<html>
+<head>
+<script>
+
+function myFn() {
+  var foo = 'peekaboo!';
+  
+  console.log(foo); // 'peekaboo!'
+}
+
+console.log(foo);
+
+if (true) {
+  var foo = 'peekaboo!';
+  let bar = 'i see u';
+  const baz = 'baby blue!';
+
+  console.log(foo); 
+  console.log(bar); 
+  console.log(baz); 
+}
+
+console.log(foo); 
+console.log(bar); 
+console.log(baz);  
+</script>
+</head>
+</html>
+
+
+
+Question 1.
+
+<p>The console.log() is a function in JavaScript which is used to print any kind of variables defined before in it or to just print any message that needs to be displayed to the user.
+
+Syntax:
+
+console.log(A);
+
+
+Parameters: It accepts a parameter which can be an array, an object or any message.
+Return value: It returns the value of the parameter given.
+JavaScript codes to show the working of this function.
+
+console.assert(): Clears the console
+
+console.count()	:	Outputs an error message to the console
+
+console.group():	Creates a new inline group in the console. This indents following console messages by an additional level, until console.groupEnd() is called
+
+console.groupCollapsed():	Creates a new inline group in the console. However, the new group is created collapsed. The user will need to use the disclosure button to expand it
+
+console.groupEnd()	:Exits the current inline group in the console
+
+console.info()	:Outputs an informational message to the console
+
+
+console.table():	Displays tabular data as a table
+
+console.time():	Starts a timer (can track how long an operation takes)
+
+console.timeEnd():	Stops a timer that was previously started by console.time()
+
+tconsole.race()	:Outputs a stack trace to the console
+
+console.warn():	Outputs a warning message to the console
+</p>
+
+
+<html>
+<head>
+<script>
+var Arr = ["Rahul", "Sai", "akash", "Kaju" ];
+console.log(Arr);
+
+var Obj = { firstname : "Rahu", lastname : "Dev" };
+console.assert(document.getElementById("demo"), Obj);
+console.clear()
+
+for (i = 0; i < 10; i++) {
+  console.count();
+}
+console.error("Your last mistake");
+console.log("Hello Sai");
+console.group();
+console.log("Hello again, this time inside a group!");
+
+console.log("Hello rohit");
+console.groupCollapsed();
+console.log("Hello again, this time inside a collapsed group!");
+
+console.log("Hello world!");
+console.group();
+console.log("Hello again, this time inside a group!");
+console.groupEnd();
+console.log("and we are back.");
+
+console.info("Hello Anshu");
+
+console.table(["horse", "donkey", "jacky"]);
+
+console.time();
+for (i = 0; i < 100000; i++) {
+  
+  
+  function myFunction() {
+  myOtherFunction();
+}
+
+function myOtherFunction() {
+  console.trace();
+}
+}
+console.timeEnd()
+
+
+console.warn("This is a warning!");
+</script>
+
+
+</head>
+
+</html>
+
+
+
+Question 3
+
+There are 8 basic data types in JavaScript.
+
+number:  for numbers of any kind: integer or floating-point, integers are limited by ±253.
+bigint:  is for integer numbers of arbitrary length.
+string : for strings. A string may have zero or more characters, there’s no separate single-character type.
+boolean  :for true/false.
+null for:   unknown values – a standalone type that has a single value null.
+undefined: for unassigned values – a standalone type that has a single value undefined.
+object for:  more complex data structures.
+symbol for: unique identifiers.
+The typeof:  operator allows us to see which type is stored in a variable.
+
+Two forms: typeof x or typeof(x).
+Returns a string with the name of the type, like "string".
+For null returns "object" – this is an error in the language, it’s not actually an object.
